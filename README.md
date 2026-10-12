@@ -5,10 +5,6 @@ primary `/api/v1/engineering` workflow reads a real repository, invokes speciali
 provider-neutral LLM boundary, applies a bounded patch in an isolated workspace, executes a fixed
 build command, repairs from failure evidence, and stops at hash-bound human approval gates.
 
-This repository adapts [Mahendhar Reddy’s MIT-licensed reference](https://github.com/MahendharReddyM/Codex-agentic-ai-url-shortner).
-The original license is preserved and the upstream baseline is documented. See [provenance](docs/PROVENANCE.md)
-for the baseline and the changes made here. No assignment PDF, client data, or credentials are included.
-
 ## What is implemented
 
 - URL create, inspect, redirect, expiry, admin-protected disable/analytics and privacy-reduced click data.
@@ -176,7 +172,7 @@ repository mutation and build evidence should use `/api/v1/engineering`.
 
 The suite covers the URL service and execution chain, including authorization, dynamic repository
 mapping, prompt/secret handling, path protection, exact-hash approvals, parallel work, repair,
-rollback, replanning, ambiguity and restart durability. This repository publishes the attributed implementation in nine cohesive commits.
+rollback, replanning, ambiguity and restart durability.
 
 ## Honest prototype boundary
 
